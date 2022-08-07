@@ -1,0 +1,8 @@
+win/
+linus/
+macos/
+
+*.obj
+*.so
+*.lib
+ispc.exe
