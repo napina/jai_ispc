@@ -433,6 +433,6 @@ CompressBlocksBC7_ispc :: ( src: *rgba_surface, dst: *u8, settings: *bc7_enc_set
 
 #scope_file
 
-#if OS == .WINDOWS  ispclib :: #foreign_library, no_dll "win/ispc_texcomp";
-#if OS == .MACOS    ispclib :: #foreign_library, no_dll "macos/ispc_texcomp";
-#if OS == .LINUX    ispclib :: #foreign_library, no_dll "linux/ispc_texcomp";
+#if OS == .WINDOWS  ispclib :: #library, no_dll "win/ispc_texcomp";
+#if OS == .MACOS    ispclib :: #library, no_dll "macos/ispc_texcomp";
+#if OS == .LINUX    ispclib :: #library, no_dll "linux/ispc_texcomp";
